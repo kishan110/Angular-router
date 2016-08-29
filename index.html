@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <title>AngularJS: UI-Router Quick Start</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+  <p><i>Best viewed in pop-out mode to see location changes. Click blue button on the right.</i></p>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Quick Start</a>
+      <ul class="nav">
+        <li><a ui-sref="parent.route1">Route 1</a></li>
+        <li><a ui-sref="parent.route2">Route 2</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <div class="well" ui-view></div>        
+    </div>
+  </div>         
+  
+  <!-- Angular -->
+  <script src="js/1.2.4/angular.js"></script>
+  <!-- UI-Router -->
+  <script src="js/angular-ui-router.js"></script>
+  <script src="app.js"></script>  
+  <script src="build/combined.js"></script>
+  <!-- <script src="controller/parent.js"></script>
+  <script src="controller/route1/route1List.js"></script>
+  <script src="controller/route2/route2List.js"></script>
+  <script src="controller/services/getData.js"></script> -->
+</body>
+
+</html>
